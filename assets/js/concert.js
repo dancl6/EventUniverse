@@ -121,7 +121,7 @@ var displayEventDetails = function(data) {
 var getLatLngStart = function(city, stateCode){
 
       var apiId = ""
-      var apiUrl = "https://maps.googleapis.com/maps/api/geocode/json?address="+city+","+stateCode+"&key=" + process.env.apiId
+      var apiUrl = "https://maps.googleapis.com/maps/api/geocode/json?address="+city+","+stateCode+"&key=" + apiId
    
       fetch(apiUrl)
       .then(function(response){
