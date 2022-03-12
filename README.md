@@ -30,7 +30,7 @@ Git Hub Access:
 https://github.com/tanujjain2015/concertplanner
 
 WebSite Access: 
-https://tanujjain2015.github.io/concertplanner/
+https://event-universe-dan.herokuapp.com/
 
 Presentation:
 https://docs.google.com/presentation/d/1zizgqK0PJWcKRY2mZBFpK0Hjs02jkd5gkhZ8qlhPsQQ/edit?usp=sharing
