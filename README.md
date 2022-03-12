@@ -52,3 +52,4 @@ Technologies Used:
 Known Issues: 
 1. Google API implementation causing slowness issues. 
 2. UI Look and Feel - Materializecss constraints 
+3. Maps will not be shown in this deployment to hide Google Maps API key
