@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/concert.css" />
+    <title>Event Universe</title>
+</head>
+<body>
+  
+    <header>
+      <nav>
+        <nav>
+          <div class="nav-wrapper teal lighten-2">
+            <a href="#!" class="brand-logo">Event Universe</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="eventsearch.html" id="eventsearchlink">Event Search</a></li>
+              <li><a href="savedevent.html">Saved Events</a></li>
+              <li><a href="profile.html">Profile</a></li>
+              <li><a href="index.html" id="logout">Logout</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- sidenav list / links for menu for med to small screens -->
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="eventsearch.html">Event Search</a></li>
+            <li><a href="savedevent.html">Saved Events</a></li>
+            <li><a href="profile.html">Profile</a></li>
+            <li><a href="index.html">Logout</a></li> 
+        </ul> 
+          
+      </nav>
+
+    </header>
+  
+    <main >
+      <br>
+      <section>
+        <div class="row " style="padding-left: 25%;padding-right: 25%">
+          <form class="col s12">
+            <div class="row">
+              <div class="input-field col s12 m4 l4">
+                <input id="city_code" type="text" class="validate input-city">
+                <label for="city_code" >City</label>
+              </div>
+              <div class="input-field col s12 m4 l4">
+                <input id="state_code" type="text" class="validate input-state" >
+                <label for="state_code" >State</label>
+              </div>
+              <div class="input-field col s12 m4 l4">
+                <input id="radius" type="text" class="validate input-radius">
+                <label for="radius" >Radius</label>
+              </div>
+              <div class="input-field col s12 m6 l5">
+                <input id="startDate" type="date" class="validate input-startDate">
+                <label for="Start Date" >Start Date</label>
+              
+              </div>
+              <div class="input-field col s12 m6 l5">
+                <input id="endDate" type="date" class="validate input-endDate">
+                <label for="End Date">End Date</label>
+              </div>
+              <div class="input-field col s12 m2 l2  center">
+                <button class="btn waves-effect waves-light" id="btn-search" class="btn-search" type="submit" name="action">Submit
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>    
+      </section>
+    
+      <section>
+          
+        <div class="main-container" id="main-container" style="border-top-width: 1 px; border-top-style: double;height: 100%;width: 100%;">
+              
+        </div>
+      </section>
+    
+      <!-- below html for modal -->
+      <div class="container">  
+        <div id="demo-modal" class="modal">
+          <div class="modal-content">
+            <p id="modal-p"></p>
+          </div>
+          <div class="modal-footer">
+            <a href="#!" class="modal-action modal-close waves-effect btn waves-light ">Close</a>
+          </div>
+        </div>
+      </div>
+  
+    </main>
+
+    <!-- footer for copyright -->
+    <footer class="page-footer teal lighten-2">
+      <div class="footer-copyright teal lighten-2">
+        <div class="container s12 m4 l4 text-lighten-4 center">
+        © 2020 Copyright Event Universe
+        <p class="grey-text text-lighten-4 center s12 m4 l4">Tanuj Jain, Dan Lyons & David Stahl</p>
+        </div>
+      </div>
+    </footer>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/userprofile.js"></script>
+    <script src="./assets/js/events.js"></script>
+    <script src="./assets/js/lib.js"></script> 
+    <script src="./assets/js/map.js"></script>
+    <script src="./assets/js/concert.js"></script>
+
+</body>
+</html>

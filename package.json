@@ -1,0 +1,20 @@
+{
+  "name": "project_name",
+  "version": "1.0.0",
+  "description": "Project Description",
+  "scripts": {
+    "start": "serve"
+  },
+  "dependencies": {
+    "start": "cross-env NODE_ENV=development concurrently \"npm run watch:css\" \"npm run watch:html\" \"live-server ./public\"",
+    "development": "cross-env NODE_ENV=development npm run build:css && npm run build:html",
+    "production": "cross-env NODE_ENV=production npm run build:css && npm run build:html",
+    "build:html": "posthtml -c posthtml.json",
+    "watch:html": "npm run build:html & onchange \"html/**/*.html\" -- npm run build:html"
+  },
+  "author": "Pulkit Aggarwal",
+  "devDependencies": {
+    "onchange": "^7.1.0",
+    "posthtml-modules": "^0.8.0"
+  }
+}

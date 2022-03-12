@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Event Universe</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <nav>
+                <div class="nav-wrapper teal lighten-2">
+                  <a href="#!" class="brand-logo center">Event Universe</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                  </ul>
+                </div>
+              </nav>
+              
+              <!-- sidenav for small and medium size screens -->
+              <ul class="sidenav" id="mobile-demo">
+                <li><a href="index.html">Home</a></li>
+              </ul>
+          </nav>
+    </header>
+    <main>
+        <br>
+        <section>
+            <div class="container">
+            <div class="row">
+                <div class="col s1 m3 l3"></div>
+                <div class="col s12 m6 l6" >
+                  <div class="card">
+                    <div class="card-content ">
+                      <span class="card-title center">Reset Password</span>
+                            <div class="row">
+                                <div class="input-field email-container col s12 m3 l3">
+                                    <input id="email" type="email" class="validate">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                                <div class="row">
+                                    <div class="input-field password-container col s12 m3 l3">
+                                      <input id="password" type="password" class="validate" data-length="12">
+                                      <label for="password">Password</label>
+                                    </div>
+                                    <div class="input-field confirmpassword-container col s12 m3 l3">
+                                        <input id="confirmpassword" type="password" class="validate" data-length="12">
+                                        <label for="confirmpassword">Confirm Password</label>
+                                      </div>
+                                  </div>
+                            <div class="row">
+                                <div class="col s1 m4 l4"></div>
+                                <div class="col s10 m4 l4">
+                                <button class="btn waves-effect waves-light center" type="submit" name="action">Submit</button>
+                                </div>
+                                <div class="col s1 m4 l4"></div>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s1 m3 l3"></div>
+              </div>
+            </div>
+        </section>
+        
+        <!-- section for modals -->
+        <div class="container">  
+            <div id="demo-modal" class="modal">
+              <div class="modal-content">
+                <p id="modal-p"></p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class="modal-action modal-close waves-effect btn waves-light ">Close</a>
+              </div>
+            </div>
+        </div>
+
+        <!-- footer for copyright -->
+        <footer class="page-footer teal lighten-2">
+            <div class="footer-copyright teal lighten-2">
+              <div class="container s12 m4 l4 text-lighten-4 center">
+              © 2020 Copyright Event Universe
+              <p class="grey-text text-lighten-4 center s12 m4 l4">Tanuj Jain, Dan Lyons & David Stahl</p>
+              </div>
+            </div>
+        </footer>
+
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./assets/js/lib.js"></script>
+    <script src="./assets/js/userprofile.js"></script>
+    <script src="./assets/js/forgetpasswd.js"></script>
+    
+</body>
+</html> 
