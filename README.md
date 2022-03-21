@@ -1,5 +1,5 @@
 # Event Universe
-## Developed by Tanuj Jain, Dan Lyons and David Stahl
+## Developed in partnership with Tanuj Jain, Dan Lyons and David Stahl
 
 Description:
 -----------
